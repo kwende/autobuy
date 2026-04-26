@@ -208,6 +208,16 @@ Those may be added later, but v1 should remain small enough to understand.
    - cumulative ownership cost
    - comparison table
 
+## Running it
+
+```text
+python -m pip install -r requirements.txt
+python scripts/generate_notebook.py
+jupyter lab new_vs_used_vehicle_decision_lab.ipynb
+```
+
+The example vehicle values and quote terms in this repo are illustrative placeholders. Replace them with real quotes and dated valuation snapshots before using the notebook for an actual purchase.
+
 ## Repository structure
 
 ```text

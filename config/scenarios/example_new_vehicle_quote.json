@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "scenario_id": "example_new_vehicle_quote",
+    "label": "Example new-car quote",
+    "notes": "Illustrative numbers only. Replace the sale price, fees, and APR with the actual quote you receive."
+  },
+  "references": {
+    "local_constants": "lincoln_ne_vehicle_constants.json",
+    "vehicle": "example_2026_new_vehicle.json"
+  },
+  "quote_inputs": {
+    "sale_price_usd": 36495,
+    "dealer_doc_fee_usd": 299,
+    "other_taxable_fees_usd": 0,
+    "government_fees_usd": 10,
+    "quoted_out_the_door_price_usd": 39472,
+    "apr_pct": 3.9,
+    "loan_term_months": 60,
+    "extended_warranty_price_usd": 0,
+    "include_extended_warranty": false
+  },
+  "household_choices": {
+    "down_payment_usd": 6000,
+    "ownership_horizon_months": 60,
+    "annual_miles": 12000
+  },
+  "model_assumptions": {
+    "annual_insurance_usd": 1700,
+    "annual_maintenance_usd": 420,
+    "annual_registration_usd": 820,
+    "annual_major_repair_reserve_while_under_warranty_usd": 120,
+    "annual_major_repair_reserve_after_warranty_usd": 900,
+    "fuel_price_usd_per_gallon": 3.25,
+    "expected_disposition_cost_pct": 5.0
+  }
+}

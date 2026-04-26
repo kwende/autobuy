@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "local_constants_id": "lincoln_ne_vehicle_constants",
+    "label": "Lincoln, Nebraska vehicle-purchase baseline",
+    "verified_on": "2026-04-26"
+  },
+  "location": {
+    "city": "Lincoln",
+    "county": "Lancaster",
+    "state": "Nebraska",
+    "country": "United States"
+  },
+  "taxes_and_fees": {
+    "state_sales_tax_rate_pct": 5.5,
+    "local_sales_tax_rate_pct": 1.75,
+    "combined_sales_tax_rate_pct": 7.25,
+    "title_fee_usd": 10.0
+  },
+  "notes": {
+    "registration_modeling_note": "Nebraska registration and motor-vehicle taxes vary with MSRP, age, and county processing. Put your expected annual registration amount in each scenario's model_assumptions.annual_registration_usd after checking the DMV estimator or county quote.",
+    "otd_modeling_note": "Use quoted_out_the_door_price_usd as the source of truth whenever the dealer worksheet contains line items the notebook does not model explicitly."
+  },
+  "notebook_defaults": {
+    "stale_snapshot_warning_days": 45,
+    "default_hold_months": [
+      36,
+      60,
+      96,
+      120
+    ]
+  },
+  "sources": [
+    {
+      "label": "Nebraska Department of Revenue local sales tax rates effective April 1, 2026 to June 30, 2026",
+      "url": "https://revenue.nebraska.gov/sites/default/files/doc/tax-forms/2026/salestax/slstax_rates_04-01-2026.pdf"
+    },
+    {
+      "label": "Nebraska DMV title fee reference",
+      "url": "https://dmv.nebraska.gov/dvr/new-nebraska"
+    },
+    {
+      "label": "Nebraska DMV registration fees and taxes overview",
+      "url": "https://dmv.nebraska.gov/dvr/reg/registration-fees-and-taxes"
+    }
+  ]
+}

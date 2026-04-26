@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "vehicle_id": "example_2026_honda_crv_ex_new",
+    "label": "2026 Honda CR-V EX (illustrative new-car example)",
+    "notes": "Illustrative placeholder values for repo scaffolding only. Replace with a dated market snapshot before using this to make a real purchase decision."
+  },
+  "vehicle_identity": {
+    "year": 2026,
+    "make": "Honda",
+    "model": "CR-V",
+    "trim": "EX",
+    "condition": "new",
+    "odometer_miles": 12,
+    "fuel_type": "gasoline"
+  },
+  "efficiency_and_warranty": {
+    "combined_mpg": 31,
+    "basic_warranty_months_remaining": 36,
+    "powertrain_warranty_months_remaining": 60
+  },
+  "valuation": {
+    "current_market_value_usd": 36495,
+    "valuation_lookup_date": "2026-04-15",
+    "source_name": "Illustrative repo example",
+    "source_url": null,
+    "value_retention_pct_by_year": [
+      0.88,
+      0.78,
+      0.69,
+      0.61,
+      0.54,
+      0.48,
+      0.43,
+      0.39,
+      0.35,
+      0.32
+    ]
+  }
+}

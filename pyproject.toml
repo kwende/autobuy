@@ -1,9 +1,14 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "autobuy"
 version = "0.1.0"
 description = "Notebook-first vehicle purchase decision lab."
 requires-python = ">=3.10"
 dependencies = [
+    "jupyterlab",
     "numpy",
     "pandas",
     "matplotlib",

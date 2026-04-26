@@ -1,0 +1,179 @@
+{
+  "kind": "scenario",
+  "sections": [
+    {
+      "name": "meta",
+      "description": "Scenario identity for notebook comparisons.",
+      "fields": [
+        {
+          "name": "scenario_id",
+          "type": "string",
+          "required": true,
+          "example": "example_new_vehicle_quote"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "required": true,
+          "example": "Example new-car quote"
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "required": false,
+          "example": "Quote math is illustrative only."
+        }
+      ]
+    },
+    {
+      "name": "references",
+      "description": "Links the scenario to a local constant file and a vehicle file.",
+      "fields": [
+        {
+          "name": "local_constants",
+          "type": "string",
+          "required": true,
+          "example": "lincoln_ne_vehicle_constants.json"
+        },
+        {
+          "name": "vehicle",
+          "type": "string",
+          "required": true,
+          "example": "example_2026_new_vehicle.json"
+        }
+      ]
+    },
+    {
+      "name": "quote_inputs",
+      "description": "Dealer and lender numbers for this specific offer.",
+      "fields": [
+        {
+          "name": "sale_price_usd",
+          "type": "number",
+          "required": true,
+          "example": 36495
+        },
+        {
+          "name": "dealer_doc_fee_usd",
+          "type": "number",
+          "required": true,
+          "example": 299
+        },
+        {
+          "name": "other_taxable_fees_usd",
+          "type": "number",
+          "required": true,
+          "example": 0
+        },
+        {
+          "name": "government_fees_usd",
+          "type": "number",
+          "required": true,
+          "example": 10
+        },
+        {
+          "name": "quoted_out_the_door_price_usd",
+          "type": "number",
+          "required": false,
+          "example": 39472
+        },
+        {
+          "name": "apr_pct",
+          "type": "number",
+          "required": true,
+          "example": 3.9
+        },
+        {
+          "name": "loan_term_months",
+          "type": "integer",
+          "required": true,
+          "example": 60
+        },
+        {
+          "name": "extended_warranty_price_usd",
+          "type": "number",
+          "required": true,
+          "example": 0
+        },
+        {
+          "name": "include_extended_warranty",
+          "type": "boolean",
+          "required": true,
+          "example": false
+        }
+      ]
+    },
+    {
+      "name": "household_choices",
+      "description": "The main knobs you actually control during the discussion.",
+      "fields": [
+        {
+          "name": "down_payment_usd",
+          "type": "number",
+          "required": true,
+          "example": 6000
+        },
+        {
+          "name": "ownership_horizon_months",
+          "type": "integer",
+          "required": true,
+          "example": 60
+        },
+        {
+          "name": "annual_miles",
+          "type": "number",
+          "required": true,
+          "example": 12000
+        }
+      ]
+    },
+    {
+      "name": "model_assumptions",
+      "description": "Forecast-style values that influence the comparison but are not hard facts.",
+      "fields": [
+        {
+          "name": "annual_insurance_usd",
+          "type": "number",
+          "required": true,
+          "example": 1700
+        },
+        {
+          "name": "annual_maintenance_usd",
+          "type": "number",
+          "required": true,
+          "example": 420
+        },
+        {
+          "name": "annual_registration_usd",
+          "type": "number",
+          "required": true,
+          "example": 800
+        },
+        {
+          "name": "annual_major_repair_reserve_while_under_warranty_usd",
+          "type": "number",
+          "required": true,
+          "example": 120
+        },
+        {
+          "name": "annual_major_repair_reserve_after_warranty_usd",
+          "type": "number",
+          "required": true,
+          "example": 900
+        },
+        {
+          "name": "fuel_price_usd_per_gallon",
+          "type": "number",
+          "required": true,
+          "example": 3.25
+        },
+        {
+          "name": "expected_disposition_cost_pct",
+          "type": "number",
+          "required": true,
+          "example": 5.0
+        }
+      ]
+    }
+  ]
+}

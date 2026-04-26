@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "vehicle_id": "example_2023_honda_crv_ex_used",
+    "label": "2023 Honda CR-V EX (illustrative used-car example)",
+    "notes": "Illustrative placeholder values for repo scaffolding only. The valuation date is intentionally stale so the notebook demonstrates its warning behavior."
+  },
+  "vehicle_identity": {
+    "year": 2023,
+    "make": "Honda",
+    "model": "CR-V",
+    "trim": "EX",
+    "condition": "used",
+    "odometer_miles": 34500,
+    "fuel_type": "gasoline"
+  },
+  "efficiency_and_warranty": {
+    "combined_mpg": 30,
+    "basic_warranty_months_remaining": 0,
+    "powertrain_warranty_months_remaining": 24
+  },
+  "valuation": {
+    "current_market_value_usd": 28495,
+    "valuation_lookup_date": "2026-02-01",
+    "source_name": "Illustrative repo example",
+    "source_url": null,
+    "value_retention_pct_by_year": [
+      0.91,
+      0.83,
+      0.76,
+      0.69,
+      0.63,
+      0.58,
+      0.53,
+      0.49,
+      0.45,
+      0.42
+    ]
+  }
+}

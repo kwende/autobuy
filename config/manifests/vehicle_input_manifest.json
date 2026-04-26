@@ -1,0 +1,148 @@
+{
+  "kind": "vehicle",
+  "sections": [
+    {
+      "name": "meta",
+      "description": "Human-readable identity and notes for the saved vehicle record.",
+      "fields": [
+        {
+          "name": "vehicle_id",
+          "type": "string",
+          "required": true,
+          "example": "2026_honda_crv_ex_new"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "required": true,
+          "example": "2026 Honda CR-V EX (new)"
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "required": false,
+          "example": "Replace the illustrative numbers with a dated market-value lookup before using this in a real buy."
+        }
+      ]
+    },
+    {
+      "name": "vehicle_identity",
+      "description": "Core facts about the vehicle itself.",
+      "fields": [
+        {
+          "name": "year",
+          "type": "integer",
+          "required": true,
+          "example": 2026
+        },
+        {
+          "name": "make",
+          "type": "string",
+          "required": true,
+          "example": "Honda"
+        },
+        {
+          "name": "model",
+          "type": "string",
+          "required": true,
+          "example": "CR-V"
+        },
+        {
+          "name": "trim",
+          "type": "string",
+          "required": true,
+          "example": "EX"
+        },
+        {
+          "name": "condition",
+          "type": "string",
+          "required": true,
+          "example": "new"
+        },
+        {
+          "name": "odometer_miles",
+          "type": "integer",
+          "required": true,
+          "example": 12
+        },
+        {
+          "name": "fuel_type",
+          "type": "string",
+          "required": true,
+          "example": "gasoline"
+        }
+      ]
+    },
+    {
+      "name": "efficiency_and_warranty",
+      "description": "Facts that affect running costs and risk timing.",
+      "fields": [
+        {
+          "name": "combined_mpg",
+          "type": "number",
+          "required": true,
+          "example": 31
+        },
+        {
+          "name": "basic_warranty_months_remaining",
+          "type": "integer",
+          "required": true,
+          "example": 36
+        },
+        {
+          "name": "powertrain_warranty_months_remaining",
+          "type": "integer",
+          "required": true,
+          "example": 60
+        }
+      ]
+    },
+    {
+      "name": "valuation",
+      "description": "A dated market snapshot and a forward value curve anchored to that snapshot.",
+      "fields": [
+        {
+          "name": "current_market_value_usd",
+          "type": "number",
+          "required": true,
+          "example": 36500
+        },
+        {
+          "name": "valuation_lookup_date",
+          "type": "date",
+          "required": true,
+          "example": "2026-04-20"
+        },
+        {
+          "name": "source_name",
+          "type": "string",
+          "required": true,
+          "example": "Manual estimate from valuation site"
+        },
+        {
+          "name": "source_url",
+          "type": "string",
+          "required": false,
+          "example": "https://example.com/value-snapshot"
+        },
+        {
+          "name": "value_retention_pct_by_year",
+          "type": "array[number]",
+          "required": true,
+          "example": [
+            0.88,
+            0.78,
+            0.69,
+            0.61,
+            0.54,
+            0.48,
+            0.43,
+            0.39,
+            0.35,
+            0.32
+          ]
+        }
+      ]
+    }
+  ]
+}
