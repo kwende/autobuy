@@ -1,0 +1,14 @@
+[project]
+name = "autobuy"
+version = "0.1.0"
+description = "Notebook-first vehicle purchase decision lab."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "numpy-financial",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
